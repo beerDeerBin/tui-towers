@@ -1,0 +1,57 @@
+# TUI Towers  (Draft v0.1)
+
+> **Disclaimer:** Initial brainstorm by Christoph & Stefan. Not a final scope — meant as a discussion base for the first meeting with our professor and for pitching to potential teammates. No one is forced to join; contributions/feedback welcome.
+
+## 1. Idea in One Line
+A kid-friendly, theme-agnostic tower defense game, controlled via 3D-printed tangible objects on the TUIO table, with a live 3D view on a second (vertical) screen and/or alternative MR/VR viewing via Quest 3.
+
+## 2. How This Maps to the Official Requirements
+| Requirement (from Projektdefinition)                    | Our Concept                                                                            |
+| ------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Tangible Interaction (recognition, tracking, real-time) | Towers/base = 3D-printed tangibles, tracked via TUIO table                             |
+| 3D-Visualisierung (vertical screen, Unity/C#)           | Second screen renders the live game/run in 3D — view only, no interaction              |
+| MR/VR-Integration (Quest 3)                             | Quest 3 as *additional* immersive viewer of the running game (see open question below) |
+| User Experience (intuitive interaction, evaluation)     | Grid + placement validation on the table; short playtest at the end                    |
+
+## 3. Core Player Actions
+- Place tangible objects (base, towers) on a grid on the table
+- Trigger round start ("Play")
+- Between rounds: manage economy (money/life), place/upgrade/replace towers
+
+## 4. Must-Have Features
+- Towers & enemies as visual/gameplay elements (towers = tangibles; enemies = digital only)
+- Endless-runner style difficulty ramp (escalates until player loses)
+- Money & life system (place towers, lose on life = 0)
+- Basic enemy path (fixed spawn → base route)
+- Grid layout on the table for placement
+- Basic placement validation (no placing anywhere/anytime)
+- Menu Screen + Game Screen
+- Minimal working version of the game loop (below)
+
+## 5. Game Loop (Concise)
+1. Place "Base" tangible on table → base initializes
+2. Enemy path is generated (depends on difficulty/pathing choice):
+   - **Option A:** one fixed full path (simple, safe scope)
+   - **Option B:** short path that expands over time (more complex) - currently preferred
+1. Player places first tower(s) → hits "Play" → 2nd screen (or VR) shows the round live
+2. After N enemies defeated (round complete), depending on scope, player can:
+   - choose a path / place towers / upgrade / replace / pick a perk
+1. Eventually player is overwhelmed → game over → back to menu (+ meta-progression if skill tree exists - also currently preferred)
+
+## 6. Optional / Stretch Features (only if time allows)
+- Skill tree / meta-progression between runs
+- Tower upgrades, perks
+- Difficulty levels (Easy/Hard/...)
+- Settings menu, end screen
+- Expanding map, tile types (water/earth/etc.)
+- Sophisticated pathing (dynamic/branching)
+
+## 7. Open Question: Second Screen vs. MR/VR
+- Our preference: **2nd screen** shows the live 3D run (interaction stays on the table only).
+- Alternative: We use the Quest as 2nd screen.
+
+>This is our initial draft and we have many more ideas which we could integrate but we will wait for your feedback and also of our colleagues as we are not 100% sure if rather the idea is accepted and/or our colleagues will join us! We would love to do this but we will not force others to join us, but we warmly welcome them if they want to.
+
+## 8. Reference Assets
+- [Tiny Kingdom Tower Defense (Unity Asset Store)](https://assetstore.unity.com/packages/2d/tiny-kingdom-tower-defense-346906)
+- [Tower Defense Template (Unity Asset Store)](https://assetstore.unity.com/packages/essentials/tutorial-projects/tower-defense-template-107692#content)
