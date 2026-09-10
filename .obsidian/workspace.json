@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "f6ce9a0034612049",
+        "id": "d0ff75c5f63a12c9",
         "type": "tabs",
         "children": [
           {
-            "id": "fac4fb445543feee",
+            "id": "4a825e7819a4b993",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Meetings/2026-08-28 - Base Concept.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2026-08-28 - Base Concept"
+              "title": "New tab"
             }
           }
         ]
@@ -99,7 +95,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Meetings/2026-08-28 - Claude Concept.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,8 +164,19 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "c591a4c8b00981b1",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {},
+              "icon": "lucide-info",
+              "title": "File properties"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -188,15 +194,18 @@
       "bases:Create new base": false
     }
   },
-  "active": "fac4fb445543feee",
+  "active": "4a825e7819a4b993",
   "lastOpenFiles": [
+    "Meetings/2026-09-03.md",
+    "Meetings/2026-09-01.md",
+    "Meetings/2026-08-28.md",
+    "DMT_NIS_TableTUIO_AIM25.pdf",
+    "Welcome to TUI Towers.md",
+    "Meetings/2026-.md",
     "Meetings/2026-08-28 - Claude Concept.md",
-    "Meetings/2026-08-28 - Base Concept.md",
     "2026-08-28 - Claude Concept.md",
     "TableTUIO_TowerDefense_Concept.md",
     "Meetings",
-    "Meeting Notes.md",
-    "Welcome to TUI Towers.md",
-    "DMT_NIS_TableTUIO_AIM25.pdf"
+    "Meeting Notes.md"
   ]
 }
